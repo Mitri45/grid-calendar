@@ -71,6 +71,8 @@ nextMonthButton.addEventListener('click', function (event) {
         currentMonth++
     };
 
+    
+    let alteredMonth = currentDate.setMonth(currentMonth);
     //Remove all child Nodes from calendarDays and fill with new dates for next month  
     calendarDays.innerHTML = "";
     fillCalendarCurrentMonth(currentYear, currentMonth);

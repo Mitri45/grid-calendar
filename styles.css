@@ -1,6 +1,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
 }
 *,
 *:before,
@@ -22,23 +23,23 @@ p {
 }
 
 button {
-  background-color: white;
-  border: 1px blue solid;
-  border-radius: 5%;
+  background-color: rgb(215, 224, 233);
+  box-shadow: 2px 2px rgb(166, 172, 179);
+  border: none;
+  padding: 1em 0;
 }
 
 button:hover {
-  background-color: rgb(102, 156, 238);
-  border: 1px blue solid;
-  border-radius: 5%;
+  box-shadow: 3px 3px rgb(166, 172, 179);
   cursor: pointer;
 }
 
 .calendar-month-year-wrapper {
   display: grid;
   grid-template-areas: "back title next";
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: 12% 1fr 12%;
   margin-bottom: 1em;
+  font-size: 40px;
 }
 
 .calendar-month-year {
@@ -51,7 +52,6 @@ button:hover {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(7, 1fr);
-
   padding-bottom: 1em;
 }
 
